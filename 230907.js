@@ -24,3 +24,22 @@ console.log(meetAt(2000,10))
 
 // String 문자열 안에 동적인 값을 넣어주고 싶을 때 ${동적인값}정적인문장을 넣어주면 된다. 
 // 그리고 이 문장을 감싸는것은 ""큰따옴표나 ''작은 따옴표가 아닌 `` 백틱이다
+
+
+
+
+
+function findSmallestElement(arr){
+  if(arr.length == 0){ //arr가 비어있다. 값이 없다.
+    return 0
+  }
+  let result = arr[0] //arr에 입력된 값 중 첫번째 값을 일단 result에 넣어준다.
+  for(let i=1; i<arr.length; i++){
+    if(result > arr[i]){ //만약 result에 있는 값이 arr[i]값보다 크면
+      result = arr[i] //arr[i]값을 result에 넣어준다
+    }
+  }
+  return result
+}
+
+console.log(findSmallestElement([100,200,3,0,2,1]))
