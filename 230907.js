@@ -28,6 +28,7 @@ console.log(meetAt(2000,10))
 
 
 
+// 인자로 받은 값 중 가장 작은 값을 반환하는 함수
 
 function findSmallestElement(arr){
   if(arr.length == 0){ //arr가 비어있다. 값이 없다.
@@ -43,3 +44,20 @@ function findSmallestElement(arr){
 }
 
 console.log(findSmallestElement([100,200,3,0,2,1]))
+
+
+
+
+// 돈을 매개변수로 받으면 몇개의 지폐와 동전이 필요한지 최소 개수를 계산해주는 함수
+
+let unit = [50000, 10000, 5000, 1000, 500, 100]
+
+function Change(money) {
+  for (let i = 0; i < unit.length; i++) {
+    let num = Math.floor(money / unit[i]) // Math.floor 버림 함수
+    console.log(`${unit[i]} X ${num}`)
+    money = money - (unit[i] * num) // for문을 한번 돌고 난 뒤 남은 잔돈을 money에 재할당시켜줌.
+  }
+}
+
+Change(12300)
