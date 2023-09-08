@@ -1,0 +1,52 @@
+*{ margin:0; padding:0; }
+#wrap{ 
+    width: 100%;
+    height: 100vh;
+    background: url("./img/bg.jpg") no-repeat center/cover;
+    position: relative;
+}
+.game-area{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.game-area h1{
+    color: yellow;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.result{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.user-input{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    border: 0px solid #000;
+    font-size: 20px;
+    margin: 20px;
+}
+.user-input::placeholder {
+    font-size: 15px;
+    font-style: italic;
+}
+.game-area button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0px solid #000;
+    font: bold 18px "맑은 고딕";
+}
+.play-button{
+    background-color: green;
+    cursor: pointer;
+}
+.reset-button{
+    background-color: red;
+    cursor: pointer;
+}
